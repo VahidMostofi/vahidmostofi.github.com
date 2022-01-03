@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<p>
+  Hi, I'm Vahid and this is my personal page. I'm a computer programmer spending a lot of time on my projects. The miraculous outcome is that I constantly have a lot of fabulous and distinguished scenes, memories and ideas that play a prominent role in being applied to the projects I have in hand. Form beginning of 2020, I decided to write about these experiences and the technical aspects of phasing them. 
+</p>
+
+<h1>Posts</h1>
+<div class="posts">
+  <ul style="list-style-type: none;">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{post.post_path}}"><h3>{{post.title}}</h3></a>
+      <p>{{post.summary}}</p>
+      <span class="post-date">{{ post.date | date_to_string }} about <small>{{post.tags}}</small></span>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+<!-- <div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %} -->
+</div>
