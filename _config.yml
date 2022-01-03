@@ -1,0 +1,21 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Vahid Mostofi
+tagline:          'Computer Programmer'
+description:      'My goal is to write here so I cause less headache when Im around my friends.'
+url:              https://vahidmostofi.com
+baseurl:          /
+
+author:
+  name:           'Vahid Mostofi'
+  url:            https://linkedin.com/in/vahid-mostofi
+
+paginate:         5
+ 
+gem: [jekyll-paginate, jekyll-gists] 
